@@ -1,9 +1,23 @@
 .container {
-    padding-inline: 5vw;
+  padding-inline: 5vw;
 }
 
 a {
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-  }
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*button*/
+.primary-button {
+  background-color: var(--accent);
+  padding: 15px;
+  width: fit-content;
+  color: var(--white);
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+.primary-button:hover {
+  background-color: rgb(102, 64, 32);
+}
