@@ -1,3 +1,3 @@
-# web-1
+# Epicurean Haven
 
-# web-1
+Welcome to Epicurean Haven, a delightful restaurant website coded entirely in HTML and CSS!
