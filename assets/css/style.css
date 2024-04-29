@@ -49,13 +49,36 @@ nav ul li a:hover {
   background-image: url("../img/43335.jpg");
   background-color: rgb(77, 77, 77);
   background-blend-mode: multiply;
-  height: 90vh;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  position: relative;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45vw;
+  padding-block: 100px;
+}
+.hero-text h1 span {
+  font-weight: 400;
+  color: var(--white);
+}
+.hero-section h1 {
+  color: var(--white);
+  font-size: 50px;
+  line-height: 60px;
+}
+.hero-section h2 {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+.btn-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }

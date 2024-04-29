@@ -7,7 +7,12 @@ a {
   font-weight: 600;
   text-decoration: none;
 }
-
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 18px;
+}
 /*button*/
 .primary-button {
   background-color: var(--accent);
@@ -20,4 +25,17 @@ a {
 }
 .primary-button:hover {
   background-color: rgb(102, 64, 32);
+}
+
+.secondary-button-light {
+  padding: 13px 50px;
+  width: fit-content;
+  border: 2px solid var(--white);
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.2s linear;
+}
+.secondary-button-light:hover {
+  background-color: var(--white);
+  color: var(--eerie-black);
 }
