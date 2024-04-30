@@ -85,6 +85,53 @@ nav ul li a:hover {
 }
 /*todo our-menu section*/
 
+.menu {
+  padding-bottom: 70px;
+  text-align: center;
+  position: relative;
+}
+
+.menu-list {
+  display: flex;
+  gap: 10px;
+  text-align: left;
+  padding-bottom: 70px;
+  flex-wrap: wrap;
+}
+
+.menu-list div {
+  width: calc(100vw / 4 - 42px);
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0px -84px 52px -31px #000;
+  height: 350px;
+  flex-grow: 1;
+  transition: 0.2s linear !important;
+}
+.menu-list > div:nth-child(1) {
+  background-image: url("../img/starters.jpeg");
+  background-position: bottom;
+}
+.menu-list > div:nth-child(2) {
+  background-image: url("../img/main-course.jpeg");
+}
+
+.menu-list > div:nth-child(3) {
+  background-image: url("../img/dessert.jpeg");
+  background-position: center;
+}
+
+.menu-list > div:nth-child(4) {
+  background-image: url("../img/cocktail.jpeg");
+  background-position: bottom;
+}
+
+.menu-list div h2 {
+  position: absolute;
+  bottom: 0;
+  color: var(--white);
+  padding: 20px;
+}
 /*todo about section*/
 
 /*todo gallery section*/

@@ -26,7 +26,18 @@ h2 {
 .primary-button:hover {
   background-color: rgb(102, 64, 32);
 }
-
+.secondary-button {
+  padding: 15px 35px;
+  width: fit-content;
+  border: 2px solid var(--eerie-black);
+  text-decoration: none;
+  color: var(--eerie-black);
+  transition: 0.2s linear;
+}
+.secondary-button:hover {
+  background-color: var(--eerie-black);
+  color: var(--white);
+}
 .secondary-button-light {
   padding: 13px 50px;
   width: fit-content;
@@ -38,4 +49,44 @@ h2 {
 .secondary-button-light:hover {
   background-color: var(--white);
   color: var(--eerie-black);
+}
+/*title section*/
+
+.section-title {
+  text-align: center;
+  padding: 50px 12vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-title h1 {
+  font-weight: 500;
+}
+.section-title h2 {
+  font-weight: 400;
+}
+
+.section-title span {
+  color: var(--accent);
+  position: relative;
+}
+
+.section-title span:before {
+  content: "";
+  background-color: var(--accent);
+  width: 20px;
+  height: 2px;
+  top: 10px;
+  left: -30px;
+  position: absolute;
+}
+
+.section-title span:after {
+  content: "";
+  background-color: var(--accent);
+  width: 20px;
+  height: 2px;
+  right: -30px;
+  top: 10px;
+  position: absolute;
 }
