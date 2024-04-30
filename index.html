@@ -21,17 +21,36 @@
   <body>
     <header>
       <nav class="container">
+        <input type="checkbox" id="menuToggle" />
         <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li>
+            <label for="menuToggle"
+              ><img class="close" src="assets/icon/close.png" alt=""
+            /></label>
+          </li>
+          <li>
+            <a href="#">Home</a>
+          </li>
           <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="reservation.html" target="_blank" class="primary-button"
+              >Make a Reservation</a
+            >
+          </li>
         </ul>
-        <a href="#reservation" class="primary-button">Make a Reservation</a>
+        <a href="reservation.html" target="_blank" class="primary-button"
+          >Make a Reservation</a
+        >
+        <label class="hamburger" for="menuToggle"
+          ><img src="assets/icon/hamburger.png" alt=""
+        /></label>
       </nav>
     </header>
+
     <section class="hero-section container">
       <div class="hero-text">
         <h1><span>Epicurean Haven:</span> Where Taste Meets Luxury</h1>

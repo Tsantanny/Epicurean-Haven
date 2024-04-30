@@ -20,6 +20,12 @@ body {
   background-color: var(--white);
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
 nav {
   background-color: var(--white);
   font-weight: 600;
@@ -36,13 +42,26 @@ nav img {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 nav ul li a {
   transition: color 0.2s linear;
 }
 nav ul li a:hover {
   color: var(--accent);
+}
+nav input {
+  display: none;
+}
+nav .close,
+nav .hamburger {
+  display: none;
+}
+nav.container a.primary-button:nth-of-type(1) {
+  display: none;
+}
+nav img {
+  width: 150px;
 }
 
 /*todo hero section*/
@@ -335,6 +354,66 @@ footer a:hover img {
 
 /*! RESPONSIVE */
 /*? navbar */
+@media screen and (max-width: 880px) {
+  nav .hamburger {
+    display: inherit;
+  }
+  nav .close,
+  nav .hamburger img {
+    display: inherit;
+    width: 30px;
+  }
+  nav label img {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+  nav label img:hover {
+    opacity: 1;
+  }
+  nav.container a.primary-button:nth-of-type(1) {
+    display: inherit;
+  }
+  nav.container a.primary-button:hover {
+    color: var(--white);
+  }
+  nav.container a.primary-button:nth-of-type(2) {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    height: 100vh;
+    width: 250px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px 0 17px #0000004a;
+    background-color: var(--white);
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateX(0px);
+    transition: transform 0.8s ease;
+  }
+  input[type="checkbox"]:not(:checked) ~ ul {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px 0 17px #000000bd;
+    background-color: var(--white);
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    transform: translateX(-280px);
+    overflow: hidden;
+    transition: transform 0.8s ease;
+  }
+}
 /*? hero section */
 @media screen and (max-width: 1145px) {
   .hero-text {
