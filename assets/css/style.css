@@ -428,3 +428,68 @@ footer a:hover img {
   }
 }
 /*? footer section */
+
+@media screen and (max-width: 1220px) {
+  footer .contact-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+  }
+  footer .contact-container > div {
+    flex-basis: calc(100vw / 3);
+  }
+  .subscribe {
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  footer .contact-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  footer .contact-container > div {
+    flex-basis: calc(100vw / 6);
+  }
+  .subscribe {
+    align-items: flex-start;
+    text-align: left;
+    width: 50vw;
+  }
+  footer ul {
+    width: 50vw;
+  }
+  .social {
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 755px) {
+  footer .contact-container {
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+  }
+  footer .contact-container > div {
+    flex-basis: calc(100vw / 6);
+  }
+  .subscribe {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+  .opening-hour {
+    width: 100vw;
+  }
+  footer ul {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  footer form > input:nth-child(1) {
+    width: 65vw;
+  }
+}
