@@ -222,5 +222,22 @@ nav ul li a:hover {
   }
 }
 /*? about section */
+
+@media screen and (min-width: 900px) {
+  .about {
+    box-shadow: inset -50vw 33px 109px -56px #0009;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about {
+    background-color: rgb(32, 32, 32);
+  }
+  .about > div:nth-child(1) {
+    display: none;
+  }
+  .about > div:nth-child(2) {
+    width: 80vw;
+  }
+}
 /*? gallery section */
 /*? footer section */
