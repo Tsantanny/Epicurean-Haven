@@ -1,20 +1,10 @@
 nav .secondary-button {
   padding-block: 11px;
 }
-/*todo reservation title */
-.reservation-title {
-  display: flex;
-  justify-content: center;
+.banner {
+  background-image: url("../img/Young\ Woman\ Taking\ a\ Reservation\ by\ Phone\ at\ a\ Restaurant\ Stock\ Photo\ -\ Image\ of\ ethnicity\,\ horizontal\ 85212768.jpeg") !important;
+  background-position: 50% 25% !important;
 }
-
-.reservation-title h1 {
-  font-size: 50px;
-  font-weight: 500;
-  padding-block: 50px;
-  width: 60vw;
-  text-align: center;
-}
-
 /*todo reservation-form*/
 
 form {
@@ -62,7 +52,7 @@ form .secondary-button {
   display: flex;
   position: relative;
   box-shadow: 0 6px 30px -8px #0006;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .reservation-form > div:nth-child(1) {
