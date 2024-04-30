@@ -122,3 +122,52 @@ input {
   top: 10px;
   position: absolute;
 }
+/*banner*/
+
+.banner {
+  background-image: url("../img/2150901946.jpg");
+  margin-bottom: 100px;
+  background-size: cover;
+  background-color: rgb(52, 52, 52);
+  background-blend-mode: multiply;
+  filter: grayscale(100);
+  background-position: center;
+}
+.banner * {
+  color: var(--white);
+}
+.banner div * {
+  width: 60vw;
+}
+.banner div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-block: 150px;
+  text-align: center;
+  align-items: center;
+}
+.banner h1 {
+  font-size: 50px;
+}
+.banner h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+  h1 {
+    width: 50vw !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .banner div * {
+    width: 80vw;
+  }
+  .banner h1 {
+    font-size: 35px;
+  }
+  .banner h2 {
+    font-size: 16px;
+  }
+}
