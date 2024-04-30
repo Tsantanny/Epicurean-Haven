@@ -44,7 +44,8 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--accent);
 }
-/*hero section*/
+
+/*todo hero section*/
 .hero-section {
   background-image: url("../img/43335.jpg");
   background-color: rgb(77, 77, 77);
@@ -82,3 +83,46 @@ nav ul li a:hover {
   gap: 20px;
   flex-wrap: wrap;
 }
+/*todo our-menu section*/
+
+/*todo about section*/
+
+/*todo gallery section*/
+
+/*todo footer section*/
+
+/*! RESPONSIVE */
+/*todo navbar */
+/*todo hero section */
+@media screen and (max-width: 1145px) {
+  .hero-text {
+    width: 65vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .hero-text {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 580px) {
+  .hero-text {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btn-group .secondary-button-light {
+    padding: 13px 38px;
+  }
+  .hero-text h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .hero-text h2 {
+    font-size: 16px;
+  }
+}
+/*todo our-menu section */
+
+/*todo about section */
+/*todo gallery section */
+/*todo footer section */
