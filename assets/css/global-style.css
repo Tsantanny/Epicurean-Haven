@@ -2,6 +2,17 @@
   padding-inline: 5vw;
 }
 
+.link-redirection {
+  position: absolute;
+  height: 60px;
+  bottom: 0;
+}
+
+p,
+label {
+  font-size: 16px;
+}
+
 a,
 input[type="submit"] {
   background-color: transparent;
@@ -10,9 +21,11 @@ input[type="submit"] {
   font-weight: 600;
   text-decoration: none;
 }
+
 h1 {
   font-size: 28px;
 }
+
 h2 {
   font-size: 18px;
 }
@@ -24,6 +37,7 @@ input {
   outline: none;
   background: transparent;
 }
+
 /*button*/
 .primary-button {
   background-color: var(--accent);
@@ -34,9 +48,11 @@ input {
   text-decoration: none;
   transition: 0.2s linear;
 }
+
 .primary-button:hover {
   background-color: rgb(102, 64, 32);
 }
+
 .secondary-button {
   padding: 15px 35px;
   width: fit-content;
@@ -45,10 +61,12 @@ input {
   color: var(--eerie-black);
   transition: 0.2s linear;
 }
+
 .secondary-button:hover {
   background-color: var(--eerie-black);
   color: var(--white);
 }
+
 .secondary-button-light {
   padding: 13px 50px;
   width: fit-content;
@@ -57,12 +75,13 @@ input {
   color: var(--white);
   transition: 0.2s linear;
 }
+
 .secondary-button-light:hover {
   background-color: var(--white);
   color: var(--eerie-black);
 }
-/*title section*/
 
+/*title section*/
 .section-title {
   text-align: center;
   padding: 50px 12vw;
@@ -70,9 +89,11 @@ input {
   flex-direction: column;
   gap: 20px;
 }
+
 .section-title h1 {
   font-weight: 500;
 }
+
 .section-title h2 {
   font-weight: 400;
 }
