@@ -267,4 +267,20 @@ nav ul li a:hover {
   }
 }
 /*? gallery section */
+
+@media screen and (max-width: 900px) {
+  .gallery-img-container img {
+    width: calc(100vw / 2 - 5px);
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery-img-container img {
+    width: calc(100vw - 5px);
+    height: 350px;
+    object-fit: cover;
+  }
+}
 /*? footer section */
