@@ -133,7 +133,31 @@ nav ul li a:hover {
   padding: 20px;
 }
 /*todo about section*/
-
+.about {
+  background: url("../img/about-bg.jpeg");
+  padding-block: 100px;
+  display: flex;
+  background-color: rgb(52, 52, 52);
+  background-blend-mode: multiply;
+  gap: 30px;
+  position: relative;
+  background-size: cover;
+  background-position: left;
+}
+.about * {
+  color: var(--white);
+}
+.about div {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about h1 {
+  padding-bottom: 30px;
+  font-size: 40px;
+  font-weight: 500;
+}
 /*todo gallery section*/
 
 /*todo footer section*/
