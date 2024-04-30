@@ -1,6 +1,141 @@
 nav .secondary-button {
   padding-block: 11px;
 }
-nav .secondary-button {
-  padding-block: 11px;
+.link-redirection {
+  bottom: -60px;
+}
+#starters {
+  bottom: -100px;
+}
+p {
+  font-size: 15px;
+}
+body {
+  position: relative;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  position: relative;
+  gap: 50px;
+  justify-content: space-between;
+}
+main a {
+  color: var(--charcoal);
+}
+
+/*todo main nav */
+main nav {
+  position: relative;
+  padding-top: 28vh;
+  padding-bottom: 30vh;
+}
+main nav ul {
+  position: sticky;
+  top: 40vh;
+  align-self: center;
+}
+main nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  width: 125%;
+  overflow: hidden;
+}
+main nav li {
+  position: relative;
+}
+main nav a::before {
+  content: "";
+  background-color: var(--accent);
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: -26px;
+}
+main nav li,
+main nav a {
+  transition: 0.2s;
+}
+main nav li:hover {
+  transform: translateX(18px);
+}
+main nav a:hover {
+  color: var(--accent);
+}
+
+/* todo menu-category */
+main section {
+  width: 85vw;
+  right: 0;
+}
+
+.menu-category-container {
+  display: flex;
+  margin-bottom: 80px;
+  position: relative;
+  gap: 4%;
+  align-items: center;
+}
+article:last-child {
+  margin-bottom: 100px;
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 50px;
+  width: 48%;
+}
+.menu-items div {
+  border-bottom: 1px solid rgb(175, 175, 175);
+  padding-block: 20px;
+}
+.menu-items div h2 {
+  padding-bottom: 5px;
+  position: relative;
+  text-decoration: #f0d98b underline 9px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -6px;
+}
+.menu-items div h2 span {
+  position: absolute;
+  right: 0;
+}
+.menu-items div p {
+  min-width: 50px;
+  max-width: 90%;
+}
+
+.menu-category-container img {
+  object-fit: cover;
+  width: 48%;
+  height: 650px;
+}
+@media screen and (max-width: 975px) {
+  .menu-category-container img {
+    display: none;
+  }
+  .menu-items {
+    width: 100%;
+  }
+  .menu-category-container {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 545px) {
+  main nav {
+    display: none;
+  }
+  .container-fluid {
+    padding-inline: 5vw !important;
+  }
+
+  main section {
+    width: 100vw;
+  }
 }

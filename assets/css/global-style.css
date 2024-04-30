@@ -1,7 +1,9 @@
 .container {
   padding-inline: 5vw;
 }
-
+.container-xl {
+  padding-inline: 2vw;
+}
 .link-redirection {
   position: absolute;
   height: 60px;
@@ -132,6 +134,7 @@ input {
   background-blend-mode: multiply;
   filter: grayscale(100);
   background-position: center;
+  position: relative;
 }
 .banner * {
   color: var(--white);
