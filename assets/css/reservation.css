@@ -6,6 +6,7 @@ nav .secondary-button {
   display: flex;
   justify-content: center;
 }
+
 .reservation-title h1 {
   font-size: 50px;
   font-weight: 500;
@@ -14,6 +15,74 @@ nav .secondary-button {
   text-align: center;
 }
 
+/*todo reservation-form*/
+
+form {
+  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  gap: 50px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.col-2 div input {
+  width: 100%;
+}
+.col-2 div {
+  width: 50%;
+}
+form div input {
+  color: var(--accent);
+  font-size: 18px;
+  transition: 0.2s linear;
+}
+form div input:hover {
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0px 13px 18px -17px var(--accent);
+}
+form div input:focus {
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0px 13px 18px -17px var(--accent);
+}
+
+form .secondary-button {
+  align-self: center;
+}
+
+.reservation-form {
+  background-color: var(--white);
+  display: flex;
+  position: relative;
+  box-shadow: 0 6px 30px -8px #0006;
+  margin-bottom: 90px;
+}
+
+.reservation-form > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  width: 50vw;
+}
+.reservation-form > div:nth-child(2) {
+  background-image: url("../img/waiter.jpeg");
+  background-position: right;
+  width: 50vw;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-color: rgb(91, 91, 91);
+  background-blend-mode: multiply;
+  position: relative;
+}
 /*! RESPONSIVE */
 /*? reservation title */
 @media screen and (max-width: 850px) {
@@ -28,5 +97,41 @@ nav .secondary-button {
   .reservation-title h1 {
     font-size: 20px;
     text-align: left;
+  }
+}
+
+/*?reservation form*/
+@media screen and (max-width: 880px) {
+  form {
+    width: 65vw;
+  }
+  .reservation-form > div:nth-child(1) {
+    width: 100vw;
+  }
+  .reservation-form > div:nth-child(2) {
+    display: none;
+  }
+  .col-2 div input {
+    width: 100%;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .col-2 div {
+    width: 100vw;
+  }
+  form div input {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .col-2 {
+    flex-direction: column;
+  }
+  .col-2 div {
+    width: 100%;
   }
 }
