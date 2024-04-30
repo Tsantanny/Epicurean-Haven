@@ -1,3 +1,32 @@
 nav .secondary-button {
   padding-block: 11px;
 }
+/*todo reservation title */
+.reservation-title {
+  display: flex;
+  justify-content: center;
+}
+.reservation-title h1 {
+  font-size: 50px;
+  font-weight: 500;
+  padding-block: 50px;
+  width: 60vw;
+  text-align: center;
+}
+
+/*! RESPONSIVE */
+/*? reservation title */
+@media screen and (max-width: 850px) {
+  .reservation-title h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .reservation-title {
+    justify-content: flex-start;
+  }
+  .reservation-title h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+}
