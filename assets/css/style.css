@@ -83,8 +83,8 @@ nav ul li a:hover {
   gap: 20px;
   flex-wrap: wrap;
 }
-/*todo our-menu section*/
 
+/*todo menu section*/
 .menu {
   padding-bottom: 70px;
   text-align: center;
@@ -139,8 +139,8 @@ nav ul li a:hover {
 /*todo footer section*/
 
 /*! RESPONSIVE */
-/*todo navbar */
-/*todo hero section */
+/*? navbar */
+/*? hero section */
 @media screen and (max-width: 1145px) {
   .hero-text {
     width: 65vw;
@@ -168,8 +168,35 @@ nav ul li a:hover {
     font-size: 16px;
   }
 }
-/*todo our-menu section */
-
-/*todo about section */
-/*todo gallery section */
-/*todo footer section */
+/*? menu section */
+@media screen and (max-width: 900px) {
+  .section-title h2 {
+    font-size: 16px !important;
+  }
+  .section-title h1 {
+    font-size: 18px !important;
+  }
+  .menu-list div {
+    width: calc(100vw / 3 - 28px);
+  }
+}
+@media screen and (max-width: 740px) {
+  .menu-list div {
+    width: calc(100vw / 2 - 50px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu-list div {
+    width: calc(100vw - 28px);
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 380px) {
+  .menu-list > div:nth-child(1),
+  .menu-list > div:nth-child(3),
+  .menu-list > div:nth-child(4) {
+    background-position: center !important;
+  }
+}
+/*? about section */
+/*? gallery section */
+/*? footer section */
