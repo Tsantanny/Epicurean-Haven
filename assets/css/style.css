@@ -160,6 +160,33 @@ nav ul li a:hover {
 }
 /*todo gallery section*/
 
+.gallery {
+  position: relative;
+  padding-bottom: 120px;
+}
+.gallery-img-container {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.gallery-img-container img {
+  width: calc(100vw / 4 - 5px);
+  flex-grow: 1;
+  height: 350px;
+  object-fit: cover;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+
+.gallery-img-container img:hover {
+  transform: scale(1.05);
+  z-index: 100;
+}
+.gallery-img-container:hover > :not(:hover) {
+  filter: brightness(0.3) grayscale(100%);
+  transition: 0.1s linear;
+}
+
 /*todo footer section*/
 
 /*! RESPONSIVE */
