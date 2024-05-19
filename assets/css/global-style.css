@@ -1,5 +1,6 @@
 .container {
   padding-inline: 5vw;
+  overflow-x: hidden;
 }
 .container-xl {
   padding-inline: 2vw;
